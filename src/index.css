@@ -69,5 +69,6 @@ button:focus-visible {
   button {
     color: #1c2839;
     background-color: #90cef4;
+    font-weight: bold;
   }
 }

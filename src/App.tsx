@@ -1,7 +1,14 @@
+import { useState, useEffect } from "react";
 import { FaTrashAlt } from "react-icons/fa";
 import "./App.css";
 
 function App() {
+  const [count, setCount] = useState<number>(0);
+  
+  useEffect(() => {
+    document.title = `Done ${count} List`;
+  }, [count]);
+
   return (
     <>
       <div className="text-center p-10">
@@ -10,7 +17,8 @@ function App() {
 
       <div>
         <div className="flex items-center mb-4">
-            <input id="default-checkbox" type="checkbox" value="" className="shrink-0 peer checked:bg-green appearance-none border border-green mr-2 w-4 h-4 focus:ring-green dark:focus:ring-green dark:ring-green focus:ring-2 dark:border-green">
+            <input id="default-checkbox" type="checkbox" value="" className="shrink-0 peer checked:bg-green appearance-none border border-green mr-2 w-4 h-4 focus:ring-green dark:focus:ring-green dark:ring-green focus:ring-2 dark:border-green" 
+            onClick={() => setCount(count+1)}>
             </input>
             <span className="absolute text-white opacity-0 peer-checked:opacity-100 pointer-events-none">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="white" stroke="white" stroke-width="1">
@@ -21,7 +29,8 @@ function App() {
             <button className="p-3 max-w-sm ml-auto bg-transparent text-pink border-pink border-2 hover:border-white rounded-lg shadow-lg flex items-center space-x-4"><FaTrashAlt /></button>
         </div>
         <div className="flex items-center mb-4">
-            <input id="default-checkbox" type="checkbox" value="" className="shrink-0 peer checked:bg-green appearance-none border border-green mr-2 w-4 h-4 focus:ring-green dark:focus:ring-green dark:ring-green focus:ring-2 dark:border-green">
+            <input id="default-checkbox" type="checkbox" value="" className="shrink-0 peer checked:bg-green appearance-none border border-green mr-2 w-4 h-4 focus:ring-green dark:focus:ring-green dark:ring-green focus:ring-2 dark:border-green" 
+            onClick={() => setCount(count+1)}>
             </input>
             <span className="absolute text-white opacity-0 peer-checked:opacity-100 pointer-events-none">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="white" stroke="white" stroke-width="1">
@@ -32,7 +41,8 @@ function App() {
             <button className="p-3 max-w-sm ml-auto bg-transparent text-pink border-pink border-2 hover:border-white rounded-lg shadow-lg flex items-center space-x-4"><FaTrashAlt /></button>
         </div>
         <div className="flex items-center mb-4">
-            <input id="default-checkbox" type="checkbox" value="" className="shrink-0 peer checked:bg-green appearance-none border border-green mr-2 w-4 h-4 focus:ring-green dark:focus:ring-green dark:ring-green focus:ring-2 dark:border-green">
+            <input id="default-checkbox" type="checkbox" value="" className="shrink-0 peer checked:bg-green appearance-none border border-green mr-2 w-4 h-4 focus:ring-green dark:focus:ring-green dark:ring-green focus:ring-2 dark:border-green" 
+            onClick={() => setCount(count+1)}>
             </input>
             <span className="absolute text-white opacity-0 peer-checked:opacity-100 pointer-events-none">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="white" stroke="white" stroke-width="1">
@@ -43,7 +53,8 @@ function App() {
             <button className="p-3 max-w-sm ml-auto bg-transparent text-pink border-pink border-2 hover:border-white rounded-lg shadow-lg flex items-center space-x-4"><FaTrashAlt /></button>
         </div>
         <div className="flex items-center mb-4">
-            <input id="default-checkbox" type="checkbox" value="" className="shrink-0 peer checked:bg-green appearance-none border border-green mr-2 w-4 h-4 focus:ring-green dark:focus:ring-green dark:ring-green focus:ring-2 dark:border-green">
+            <input id="default-checkbox" type="checkbox" value="" className="shrink-0 peer checked:bg-green appearance-none border border-green mr-2 w-4 h-4 focus:ring-green dark:focus:ring-green dark:ring-green focus:ring-2 dark:border-green" 
+            onClick={() => setCount(count+1)}>
             </input>
             <span className="absolute text-white opacity-0 peer-checked:opacity-100 pointer-events-none">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="white" stroke="white" stroke-width="1">
@@ -54,7 +65,8 @@ function App() {
             <button className="p-3 max-w-sm ml-auto bg-transparent text-pink border-pink border-2 hover:border-white rounded-lg shadow-lg flex items-center space-x-4"><FaTrashAlt /></button>
         </div>
         <div className="flex items-center mb-4">
-            <input id="default-checkbox" type="checkbox" value="" className="shrink-0 peer checked:bg-green appearance-none border border-green mr-2 w-4 h-4 focus:ring-green dark:focus:ring-green dark:ring-green focus:ring-2 dark:border-green">
+            <input id="default-checkbox" type="checkbox" value="" className="shrink-0 peer checked:bg-green appearance-none border border-green mr-2 w-4 h-4 focus:ring-green dark:focus:ring-green dark:ring-green focus:ring-2 dark:border-green" 
+            onClick={() => setCount(count+1)}>
             </input>
             <span className="absolute text-white opacity-0 peer-checked:opacity-100 pointer-events-none">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="white" stroke="white" stroke-width="1">
@@ -65,7 +77,8 @@ function App() {
             <button className="p-3 max-w-sm ml-auto bg-transparent text-pink border-pink border-2 hover:border-white rounded-lg shadow-lg flex items-center space-x-4"><FaTrashAlt /></button>
         </div>
         <div className="flex items-center mb-4">
-            <input id="default-checkbox" type="checkbox" value="" className="shrink-0 peer checked:bg-green appearance-none border border-green mr-2 w-4 h-4 focus:ring-green dark:focus:ring-green dark:ring-green focus:ring-2 dark:border-green">
+            <input id="default-checkbox" type="checkbox" value="" className="shrink-0 peer checked:bg-green appearance-none border border-green mr-2 w-4 h-4 focus:ring-green dark:focus:ring-green dark:ring-green focus:ring-2 dark:border-green" 
+            onClick={() => setCount(count+1)}>
             </input>
             <span className="absolute text-white opacity-0 peer-checked:opacity-100 pointer-events-none">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="white" stroke="white" stroke-width="1">
@@ -80,7 +93,7 @@ function App() {
       <hr className="mt-8 mb-4"></hr>
 
       <div className="text-center p-2">
-          <h2 className="text-2xl font-semibold">Done : 0</h2>
+          <h2 className="text-2xl font-semibold">Done : {count}</h2>
       </div>
 
       <div className="text-left grid gap-3 grid-cols-1 grid-rows-1">
